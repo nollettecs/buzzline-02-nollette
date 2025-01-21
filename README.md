@@ -1,5 +1,13 @@
-# buzzline-02-case
+# Cole Nollette
+## 44-671 Module 2
+## 1/21/25
+## Title: buzzline-02-nollette
 
+- This project introduces using Apache Kafka
+
+The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
+As the code runs, it will continuously update log file. 
+We'll use a consumer to modify this log file and alert us when a special message is detected. 
 Streaming data is often too big for any one machine. 
 A streaming platform helps organize our pipelines.
 
@@ -29,6 +37,10 @@ For detailed instructions, see:
 
 - [SETUP-KAFKA](docs/SETUP-KAFKA.md) (all machines)
 
+### Start Kafka/Zookeeper
+- Be sure to start apache kafka and zookeeper in the terminal
+    - "brew services start Kafka" and "brew services start zookeeper"
+
 
 ## Task 2. Copy This Example Project & Rename
 
@@ -52,16 +64,10 @@ Producers generate streaming data for our topics.
 In VS Code, open a terminal.
 Use the commands below to activate .venv, and start the producer. 
 
-Windows:
-```shell
-.venv\Scripts\activate
-py -m producers.kafka_producer_case
-```
-
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.kafka_producer_case
+python3 -m producers.kafka_producer_nollette
 ```
 
 ## Task 5. Start a Kafka Consumer
@@ -71,16 +77,10 @@ Consumers process data from topics or logs in real time.
 In VS Code, open a NEW terminal in your root project folder. 
 Use the commands below to activate .venv, and start the consumer. 
 
-Windows:
-```shell
-.venv\Scripts\activate
-py -m consumers.kafka_consumer_case
-```
-
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.kafka_consumer_case
+python3 -m consumers.kafka_consumer_nollette
 ```
 
 ## Later Work Sessions
