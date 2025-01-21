@@ -1,7 +1,7 @@
 """
 kafka_producer_case.py
 
-Produce some streaming buzz strings and send them to a Kafka topic.
+Produce some streaming banking-related strings and send them to a Kafka topic.
 """
 
 #####################################
@@ -37,7 +37,7 @@ load_dotenv()
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("KAFKA_TOPIC", "buzz_topic")
+    topic = os.getenv("KAFKA_TOPIC", "banking_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
@@ -56,7 +56,7 @@ def get_message_interval() -> int:
 
 def generate_messages(producer, topic, interval_secs):
     """
-    Generate a stream of buzz messages and send them to a Kafka topic.
+    Generate a stream of banking-related messages and send them to a Kafka topic.
 
     Args:
         producer (KafkaProducer): The Kafka producer instance.
@@ -65,17 +65,22 @@ def generate_messages(producer, topic, interval_secs):
 
     """
     string_list: list = [
-        "I love Python!",
-        "Kafka is awesome.",
-        "Streaming data is fun.",
-        "This is a buzz message.",
-        "Have a great day!",
+        "Account opened successfully.",
+        "Customer made a deposit of $5000.",
+        "Loan application approved for $25,000.",
+        "Stock purchase order executed for 100 shares of ABC Corp.",
+        "Transaction declined due to insufficient funds.",
+        "New credit card issued to customer ID 12345.",
+        "Customer transferred $300 to savings account.",
+        "Interest payment of $45 credited to account.",
+        "Mortgage payment of $1,200 received.",
+        "Fraud alert triggered on account ID 67890.",
     ]
     try:
         while True:
             for message in string_list:
-                logger.info(f"Generated buzz: {message}")
-                producer.send(topic, value=message)
+                logger.info(f"Generated banking message: {message}")
+                producer.send(topic, value=message.encode('utf-8'))  # Encode message for Kafka
                 logger.info(f"Sent message to topic '{topic}': {message}")
                 time.sleep(interval_secs)
     except KeyboardInterrupt:
@@ -98,12 +103,12 @@ def main():
 
     - Ensures the Kafka topic exists.
     - Creates a Kafka producer using the `create_kafka_producer` utility.
-    - Streams generated buzz message strings to the Kafka topic.
+    - Streams generated banking message strings to the Kafka topic.
     """
     logger.info("START producer.")
     verify_services()
 
-    # fetch .env content
+    # Fetch .env content
     topic = get_kafka_topic()
     interval_secs = get_message_interval()
 
