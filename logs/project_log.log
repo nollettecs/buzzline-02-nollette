@@ -240,3 +240,1067 @@
 2025-01-21 08:46:40.512 | INFO     | __main__:process_message:62 - Processing message: Streaming data is fun.
 2025-01-21 08:46:41.513 | INFO     | __main__:generate_messages:77 - Generated buzz: This is a buzz message.
 2025-01-21 08:46:41.515 | INFO     | __main__:generate_messages:79 - Sent message to topic 'buzzline': This is a buzz message.
+2025-01-21 10:24:27.232 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-21 10:24:27.234 | INFO     | __main__:main:88 - START consumer.
+2025-01-21 10:24:27.234 | INFO     | __main__:get_kafka_topic:35 - Kafka topic: buzzline
+2025-01-21 10:24:27.234 | INFO     | __main__:get_kafka_consumer_group_id:42 - Kafka consumer group id: default_group
+2025-01-21 10:24:27.234 | INFO     | __main__:main:93 - Consumer: Topic 'buzzline' and group 'default_group'...
+2025-01-21 10:24:27.234 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:24:27.234 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-01-21 10:24:27.367 | INFO     | utils.utils_consumer:create_kafka_consumer:57 - Kafka consumer created successfully.
+2025-01-21 10:24:27.367 | INFO     | __main__:main:99 - Polling messages from topic 'buzzline'...
+2025-01-21 10:24:27.688 | ERROR    | __main__:main:108 - Error while consuming messages: 'str' object has no attribute 'decode'
+2025-01-21 10:24:27.700 | INFO     | __main__:main:111 - Kafka consumer for topic 'buzzline' closed.
+2025-01-21 10:24:27.700 | INFO     | __main__:main:113 - END consumer for topic 'buzzline' and group 'default_group'.
+2025-01-21 10:26:00.684 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-21 10:26:00.685 | INFO     | __main__:main:108 - START producer.
+2025-01-21 10:26:00.685 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-21 10:26:00.689 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-21 10:26:00.689 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:26:01.059 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'mac.lan', 'port': 9092, 'rack': None}], 'cluster_id': 'S1EN9onKTNi1lyvf3wFNGA', 'controller_id': 0}
+2025-01-21 10:26:01.060 | INFO     | __main__:get_kafka_topic:41 - Kafka topic: buzzline
+2025-01-21 10:26:01.061 | INFO     | __main__:get_message_interval:48 - Message interval: 1 seconds
+2025-01-21 10:26:01.061 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:26:01.061 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-21 10:26:01.169 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-21 10:26:01.170 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:26:01.508 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-21 10:26:01.508 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:26:01.863 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-21 10:26:01.864 | INFO     | __main__:main:124 - Kafka topic 'buzzline' is ready.
+2025-01-21 10:26:01.864 | INFO     | __main__:main:130 - Starting message production to topic 'buzzline'...
+2025-01-21 10:26:01.864 | INFO     | __main__:generate_messages:82 - Generated banking message: Account opened successfully.
+2025-01-21 10:26:01.864 | ERROR    | __main__:generate_messages:89 - Error in message generation: 'bytes' object has no attribute 'encode'
+2025-01-21 10:26:01.865 | INFO     | __main__:generate_messages:92 - Kafka producer closed.
+2025-01-21 10:26:01.865 | INFO     | __main__:main:133 - END producer.
+2025-01-21 10:29:57.324 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-21 10:29:57.326 | INFO     | __main__:main:102 - START producer.
+2025-01-21 10:29:57.326 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-21 10:29:57.330 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-21 10:29:57.330 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:29:57.689 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'mac.lan', 'port': 9092, 'rack': None}], 'cluster_id': 'S1EN9onKTNi1lyvf3wFNGA', 'controller_id': 0}
+2025-01-21 10:29:57.690 | INFO     | __main__:get_kafka_topic:40 - Kafka topic: buzzline
+2025-01-21 10:29:57.690 | INFO     | __main__:get_message_interval:46 - Message interval: 1 seconds
+2025-01-21 10:29:57.690 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:29:57.690 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-21 10:29:57.803 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-21 10:29:57.803 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:29:58.146 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-21 10:29:58.146 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:29:58.490 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-21 10:29:58.492 | INFO     | __main__:main:118 - Kafka topic 'buzzline' is ready.
+2025-01-21 10:29:58.492 | INFO     | __main__:main:124 - Starting message production to topic 'buzzline'...
+2025-01-21 10:29:58.492 | INFO     | __main__:generate_messages:78 - Generated banking message: Account opened successfully.
+2025-01-21 10:29:58.492 | ERROR    | __main__:generate_messages:85 - Error in message generation: 'bytes' object has no attribute 'encode'
+2025-01-21 10:29:58.493 | INFO     | __main__:generate_messages:88 - Kafka producer closed.
+2025-01-21 10:29:58.493 | INFO     | __main__:main:127 - END producer.
+2025-01-21 10:32:49.520 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-21 10:32:49.521 | INFO     | __main__:main:102 - START producer.
+2025-01-21 10:32:49.521 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-21 10:32:49.525 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-21 10:32:49.525 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:32:49.876 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'mac.lan', 'port': 9092, 'rack': None}], 'cluster_id': 'S1EN9onKTNi1lyvf3wFNGA', 'controller_id': 0}
+2025-01-21 10:32:49.877 | INFO     | __main__:get_kafka_topic:40 - Kafka topic: buzzline
+2025-01-21 10:32:49.877 | INFO     | __main__:get_message_interval:46 - Message interval: 1 seconds
+2025-01-21 10:32:49.877 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:32:49.877 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-21 10:32:49.990 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-21 10:32:49.991 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:32:50.334 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-21 10:32:50.334 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:32:50.678 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-21 10:32:50.680 | INFO     | __main__:main:118 - Kafka topic 'buzzline' is ready.
+2025-01-21 10:32:50.680 | INFO     | __main__:main:124 - Starting message production to topic 'buzzline'...
+2025-01-21 10:32:50.680 | INFO     | __main__:generate_messages:78 - Generated banking message: Account opened successfully.
+2025-01-21 10:32:50.680 | ERROR    | __main__:generate_messages:85 - Error in message generation: 'bytes' object has no attribute 'encode'
+2025-01-21 10:32:50.681 | INFO     | __main__:generate_messages:88 - Kafka producer closed.
+2025-01-21 10:32:50.681 | INFO     | __main__:main:127 - END producer.
+2025-01-21 10:34:27.566 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-21 10:34:27.567 | INFO     | __main__:main:103 - START producer.
+2025-01-21 10:34:27.567 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-01-21 10:34:27.570 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-01-21 10:34:27.570 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:34:27.919 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'mac.lan', 'port': 9092, 'rack': None}], 'cluster_id': 'S1EN9onKTNi1lyvf3wFNGA', 'controller_id': 0}
+2025-01-21 10:34:27.920 | INFO     | __main__:get_kafka_topic:40 - Kafka topic: buzzline
+2025-01-21 10:34:27.920 | INFO     | __main__:get_message_interval:46 - Message interval: 1 seconds
+2025-01-21 10:34:27.920 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:34:27.921 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-01-21 10:34:28.034 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-01-21 10:34:28.035 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:34:28.374 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline' already exists. Clearing it out...
+2025-01-21 10:34:28.374 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:34:28.719 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline': list indices must be integers or slices, not ConfigResource
+2025-01-21 10:34:28.720 | INFO     | __main__:main:119 - Kafka topic 'buzzline' is ready.
+2025-01-21 10:34:28.720 | INFO     | __main__:main:125 - Starting message production to topic 'buzzline'...
+2025-01-21 10:34:28.720 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:34:28.720 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:34:29.726 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:34:29.726 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:34:30.729 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:34:30.731 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:34:31.736 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:34:31.737 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:34:32.743 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:34:32.744 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:34:33.747 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:34:33.747 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:34:34.753 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:34:34.754 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:34:35.760 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:34:35.761 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:34:36.763 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:34:36.765 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:34:37.771 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:34:37.772 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:34:38.778 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:34:38.778 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:34:39.784 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:34:39.785 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:34:40.791 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:34:40.792 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:34:41.798 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:34:41.799 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:34:42.803 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:34:42.804 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:34:43.810 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:34:43.811 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:34:44.817 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:34:44.817 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:34:45.823 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:34:45.824 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:34:46.830 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:34:46.831 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:34:47.836 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:34:47.837 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:34:48.842 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:34:48.843 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:34:49.845 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:34:49.845 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:34:50.850 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:34:50.851 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:34:51.853 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:34:51.853 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:34:52.858 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:34:52.860 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:34:53.865 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:34:53.866 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:34:54.872 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:34:54.873 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:34:55.878 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:34:55.879 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:34:56.886 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:34:56.887 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:34:57.894 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:34:57.895 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:34:58.901 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:34:58.902 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:34:59.903 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:34:59.903 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:35:00.909 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:35:00.909 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:35:01.914 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:01.915 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:02.921 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:35:02.922 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:35:03.931 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:35:03.933 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:35:04.618 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-21 10:35:04.619 | INFO     | __main__:main:88 - START consumer.
+2025-01-21 10:35:04.619 | INFO     | __main__:get_kafka_topic:35 - Kafka topic: buzzline
+2025-01-21 10:35:04.619 | INFO     | __main__:get_kafka_consumer_group_id:42 - Kafka consumer group id: default_group
+2025-01-21 10:35:04.619 | INFO     | __main__:main:93 - Consumer: Topic 'buzzline' and group 'default_group'...
+2025-01-21 10:35:04.619 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:35:04.619 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-01-21 10:35:04.731 | INFO     | utils.utils_consumer:create_kafka_consumer:57 - Kafka consumer created successfully.
+2025-01-21 10:35:04.731 | INFO     | __main__:main:99 - Polling messages from topic 'buzzline'...
+2025-01-21 10:35:04.938 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:35:04.939 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:35:05.081 | ERROR    | __main__:main:108 - Error while consuming messages: 'str' object has no attribute 'decode'
+2025-01-21 10:35:05.087 | INFO     | __main__:main:111 - Kafka consumer for topic 'buzzline' closed.
+2025-01-21 10:35:05.087 | INFO     | __main__:main:113 - END consumer for topic 'buzzline' and group 'default_group'.
+2025-01-21 10:35:05.945 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:35:05.945 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:35:06.947 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:35:06.947 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:35:07.953 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:07.954 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:08.960 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:35:08.961 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:35:09.967 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:35:09.968 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:35:10.974 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:35:10.974 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:35:11.979 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:11.980 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:12.986 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:35:12.988 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:35:13.994 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:35:13.995 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:35:15.002 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:35:15.003 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:35:16.004 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:35:16.005 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:35:17.010 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:35:17.011 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:35:18.016 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:18.017 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:19.023 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:35:19.024 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:35:20.030 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:35:20.031 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:35:21.037 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:35:21.037 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:35:22.043 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:22.044 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:23.050 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:35:23.051 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:35:24.052 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:35:24.053 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:35:25.059 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:35:25.060 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:35:26.066 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:35:26.066 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:35:27.070 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:35:27.071 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:35:28.078 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:28.078 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:29.080 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:35:29.081 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:35:30.087 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:35:30.088 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:35:31.089 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:35:31.089 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:35:32.094 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:32.095 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:33.101 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:35:33.103 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:35:34.109 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:35:34.110 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:35:35.113 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:35:35.114 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:35:36.119 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:35:36.120 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:35:37.124 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:35:37.125 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:35:38.130 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:38.131 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:39.132 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:35:39.133 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:35:40.137 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:35:40.138 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:35:41.141 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:35:41.142 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:35:42.147 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:42.148 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:43.151 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:35:43.152 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:35:44.157 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:35:44.158 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:35:45.161 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:35:45.162 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:35:46.164 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:35:46.165 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:35:47.170 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:35:47.171 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:35:48.177 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:48.177 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:49.183 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:35:49.184 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:35:50.190 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:35:50.191 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:35:51.197 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:35:51.198 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:35:52.202 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:52.203 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:35:53.208 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:35:53.209 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:35:54.213 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:35:54.214 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:35:55.220 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:35:55.221 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:35:56.224 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:35:56.225 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:35:57.231 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:35:57.232 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:35:58.238 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:58.239 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:35:59.245 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:35:59.246 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:36:00.247 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:36:00.249 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:36:01.251 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:36:01.252 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:36:02.258 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:02.259 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:03.264 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:36:03.266 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:36:04.272 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:36:04.273 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:36:05.279 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:36:05.280 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:36:06.281 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:36:06.282 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:36:07.284 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:36:07.285 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:36:08.291 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:08.292 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:09.298 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:36:09.298 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:36:10.304 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:36:10.305 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:36:11.311 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:36:11.312 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:36:12.317 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:12.318 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:13.321 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:36:13.323 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:36:14.327 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:36:14.327 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:36:15.333 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:36:15.335 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:36:16.337 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:36:16.339 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:36:17.345 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:36:17.346 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:36:18.349 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:18.350 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:19.352 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:36:19.352 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:36:20.357 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:36:20.358 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:36:21.364 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:36:21.365 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:36:22.371 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:22.372 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:23.378 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:36:23.380 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:36:24.383 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:36:24.384 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:36:25.388 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:36:25.389 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:36:26.392 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:36:26.393 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:36:27.398 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:36:27.399 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:36:28.403 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:28.405 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:29.408 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:36:29.409 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:36:30.414 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:36:30.416 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:36:31.416 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:36:31.419 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:36:32.425 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:32.425 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:33.430 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:36:33.431 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:36:34.433 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:36:34.434 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:36:35.439 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:36:35.440 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:36:36.445 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:36:36.446 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:36:37.448 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:36:37.448 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:36:38.454 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:38.455 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:39.460 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:36:39.460 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:36:40.465 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:36:40.468 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:36:41.471 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:36:41.471 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:36:42.477 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:42.477 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:43.481 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:36:43.484 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:36:44.489 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:36:44.490 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:36:45.495 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:36:45.496 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:36:46.500 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:36:46.501 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:36:47.503 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:36:47.503 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:36:48.509 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:48.511 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:49.516 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:36:49.517 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:36:50.523 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:36:50.524 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:36:51.530 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:36:51.531 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:36:52.532 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:52.532 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:36:53.538 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:36:53.539 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:36:54.545 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:36:54.546 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:36:55.552 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:36:55.552 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:36:56.555 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:36:56.556 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:36:57.561 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:36:57.563 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:36:58.569 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:58.569 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:36:59.575 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:36:59.575 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:37:00.581 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:37:00.582 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:37:01.583 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:37:01.583 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:37:02.589 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:02.590 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:03.592 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:37:03.592 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:37:04.599 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:37:04.600 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:37:05.605 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:37:05.606 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:37:06.611 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:37:06.612 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:37:07.619 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:37:07.620 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:37:08.624 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:08.625 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:09.630 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:37:09.631 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:37:10.633 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:37:10.634 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:37:11.637 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:37:11.637 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:37:12.641 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:12.642 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:13.648 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:37:13.649 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:37:14.654 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:37:14.654 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:37:15.660 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:37:15.661 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:37:16.667 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:37:16.667 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:37:17.673 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:37:17.674 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:37:18.675 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:18.676 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:19.680 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:37:19.680 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:37:20.687 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:37:20.687 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:37:21.690 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:37:21.690 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:37:22.692 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:22.693 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:23.697 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:37:23.698 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:37:24.703 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:37:24.704 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:37:25.706 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:37:25.707 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:37:26.711 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:37:26.712 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:37:27.717 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:37:27.719 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:37:28.724 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:28.724 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:29.726 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:37:29.727 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:37:30.728 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:37:30.729 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:37:31.734 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:37:31.734 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:37:32.736 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:32.736 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:33.742 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:37:33.742 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:37:34.744 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:37:34.745 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:37:35.750 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:37:35.751 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:37:36.753 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:37:36.753 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:37:37.759 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:37:37.759 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:37:38.761 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:38.761 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:39.766 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:37:39.768 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:37:40.772 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:37:40.772 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:37:41.777 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:37:41.777 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:37:42.783 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:42.784 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:43.786 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:37:43.787 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:37:44.792 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:37:44.793 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:37:45.796 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:37:45.797 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:37:46.799 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:37:46.799 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:37:47.803 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:37:47.804 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:37:48.811 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:48.812 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:49.818 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:37:49.819 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:37:50.826 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:37:50.827 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:37:51.828 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:37:51.829 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:37:52.835 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:52.838 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:53.844 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:37:53.845 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:37:54.851 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:37:54.852 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:37:55.857 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:37:55.858 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:37:56.864 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:37:56.865 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:37:57.062 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs/project_log.log
+2025-01-21 10:37:57.063 | INFO     | __main__:main:88 - START consumer.
+2025-01-21 10:37:57.064 | INFO     | __main__:get_kafka_topic:35 - Kafka topic: buzzline
+2025-01-21 10:37:57.064 | INFO     | __main__:get_kafka_consumer_group_id:42 - Kafka consumer group id: default_group
+2025-01-21 10:37:57.064 | INFO     | __main__:main:93 - Consumer: Topic 'buzzline' and group 'default_group'...
+2025-01-21 10:37:57.064 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-01-21 10:37:57.064 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline' and group ID='default_group'.
+2025-01-21 10:37:57.173 | INFO     | utils.utils_consumer:create_kafka_consumer:57 - Kafka consumer created successfully.
+2025-01-21 10:37:57.174 | INFO     | __main__:main:99 - Polling messages from topic 'buzzline'...
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:72 - Banking activity: Kafka is awesome.
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:72 - Banking activity: Streaming data is fun.
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:72 - Banking activity: This is a buzz message.
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.623 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.624 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.625 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.626 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.627 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.628 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.629 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.629 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.629 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.629 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.629 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.630 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.630 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.630 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.630 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.631 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.632 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.633 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.633 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.633 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.633 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.633 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.633 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.633 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.634 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.634 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.634 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.634 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.634 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.635 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.636 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.637 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.638 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.639 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:37:57.640 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:37:57.641 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:37:57.641 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:37:57.871 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.872 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:37:57.881 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:37:58.878 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:58.879 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:58.886 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:37:59.880 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:37:59.881 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:37:59.888 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:38:00.887 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:38:00.887 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:38:00.892 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:38:01.893 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:38:01.894 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:38:01.901 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:38:02.899 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:02.901 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:02.907 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:03.902 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:38:03.903 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:38:03.908 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:38:04.905 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:38:04.906 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:38:04.914 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:38:05.912 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:38:05.913 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:38:05.921 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:38:06.918 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:38:06.920 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:38:06.930 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:38:07.927 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:38:07.928 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:38:07.934 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:38:08.932 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:08.933 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:08.942 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:09.938 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:38:09.940 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:38:09.947 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:38:10.946 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:38:10.947 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:38:10.956 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:38:11.953 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:38:11.954 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:38:11.964 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:38:12.961 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:12.963 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:12.971 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:13.966 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:38:13.967 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:38:13.976 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:38:14.970 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:38:14.973 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:38:14.979 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:38:15.979 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:38:15.979 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:38:15.986 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:38:16.985 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:38:16.986 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:38:16.991 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:38:17.990 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:38:17.991 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:38:17.998 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:38:18.997 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:18.998 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:19.004 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:20.003 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:38:20.004 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:38:20.011 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:38:21.007 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:38:21.008 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:38:21.014 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:38:22.013 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:38:22.015 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:38:22.024 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:38:23.018 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:23.018 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:23.023 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:24.023 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:38:24.026 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:38:24.032 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:38:25.027 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:38:25.028 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:38:25.035 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:38:26.033 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:38:26.034 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:38:26.039 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:38:27.040 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:38:27.041 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:38:27.048 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:38:28.047 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:38:28.049 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:38:28.057 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:38:29.055 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:29.056 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:29.062 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:30.060 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:38:30.061 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:38:30.069 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:38:31.068 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:38:31.068 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:38:31.074 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:38:32.073 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:38:32.074 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:38:32.079 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:38:33.079 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:33.080 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:33.087 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:34.086 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:38:34.087 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:38:34.094 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:38:35.093 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:38:35.094 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:38:35.101 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:38:36.096 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:38:36.096 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:38:36.099 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:38:37.101 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:38:37.102 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:38:37.109 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:38:38.108 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:38:38.109 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:38:38.116 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:38:39.112 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:39.113 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:39.119 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:40.119 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:38:40.120 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:38:40.131 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:38:41.122 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:38:41.123 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:38:41.127 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:38:42.128 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:38:42.131 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:38:42.136 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:38:43.137 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:43.138 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:43.144 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:44.144 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:38:44.145 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:38:44.152 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:38:45.150 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:38:45.151 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:38:45.156 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:38:46.156 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:38:46.156 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:38:46.160 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:38:47.161 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:38:47.162 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:38:47.169 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:38:48.168 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:38:48.169 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:38:48.175 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:38:49.170 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:49.171 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:49.178 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:50.177 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:38:50.180 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:38:50.186 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:38:51.182 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:38:51.182 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:38:51.186 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:38:52.187 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:38:52.188 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:38:52.194 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:38:53.192 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:53.193 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:53.201 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:38:54.199 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:38:54.200 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:38:54.209 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:38:55.205 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:38:55.206 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:38:55.213 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:38:56.211 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:38:56.212 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:38:56.216 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:38:57.217 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:38:57.217 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:38:57.220 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:38:58.223 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:38:58.224 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:38:58.230 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:38:59.229 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:59.230 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:38:59.239 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:00.236 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:39:00.238 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:39:00.245 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:39:01.244 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:39:01.244 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:39:01.249 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:39:02.249 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:39:02.249 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:39:02.252 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:39:03.254 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:03.256 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:03.262 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:04.259 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:39:04.260 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:39:04.265 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:39:05.265 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:39:05.266 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:39:05.270 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:39:06.272 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:39:06.273 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:39:06.277 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:39:07.278 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:39:07.278 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:39:07.283 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:39:08.284 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:39:08.284 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:39:08.293 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:39:09.286 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:09.287 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:09.295 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:10.293 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:39:10.294 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:39:10.300 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:39:11.296 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:39:11.297 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:39:11.301 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:39:12.303 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:39:12.303 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:39:12.308 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:39:13.309 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:13.311 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:13.316 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:14.315 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:39:14.318 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:39:14.325 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:39:15.324 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:39:15.326 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:39:15.331 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:39:16.327 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:39:16.328 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:39:16.335 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:39:17.333 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:39:17.334 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:39:17.339 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:39:18.339 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:39:18.340 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:39:18.348 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:39:19.347 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:19.348 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:19.353 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:20.352 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:39:20.352 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:39:20.355 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:39:21.358 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:39:21.359 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:39:21.365 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:39:22.366 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:39:22.366 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:39:22.369 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:39:23.371 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:23.372 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:23.377 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:24.376 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:39:24.377 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:39:24.381 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:39:25.382 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:39:25.383 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:39:25.388 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:39:26.389 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:39:26.389 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:39:26.393 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:39:27.394 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:39:27.395 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:39:27.399 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:39:28.401 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:39:28.402 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:39:28.406 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:39:29.405 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:29.407 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:29.411 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:30.413 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:39:30.414 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:39:30.417 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:39:31.420 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:39:31.421 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:39:31.424 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:39:32.422 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:39:32.423 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:39:32.427 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:39:33.429 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:33.430 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:33.433 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:34.435 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:39:34.436 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:39:34.441 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:39:35.439 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:39:35.440 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:39:35.445 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.
+2025-01-21 10:39:36.445 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer transferred $300 to savings account.
+2025-01-21 10:39:36.446 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer transferred $300 to savings account.
+2025-01-21 10:39:36.450 | INFO     | __main__:process_message:72 - Banking activity: Customer transferred $300 to savings account.
+2025-01-21 10:39:37.449 | INFO     | __main__:generate_messages:77 - Generated banking message: Interest payment of $45 credited to account.
+2025-01-21 10:39:37.449 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Interest payment of $45 credited to account.
+2025-01-21 10:39:37.452 | INFO     | __main__:process_message:72 - Banking activity: Interest payment of $45 credited to account.
+2025-01-21 10:39:38.454 | INFO     | __main__:generate_messages:77 - Generated banking message: Mortgage payment of $1,200 received.
+2025-01-21 10:39:38.455 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Mortgage payment of $1,200 received.
+2025-01-21 10:39:38.457 | INFO     | __main__:process_message:72 - Banking activity: Mortgage payment of $1,200 received.
+2025-01-21 10:39:39.458 | INFO     | __main__:generate_messages:77 - Generated banking message: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:39.459 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:39.462 | INFO     | __main__:process_message:72 - Banking activity: Fraud alert triggered on account ID 67890.
+2025-01-21 10:39:40.465 | INFO     | __main__:generate_messages:77 - Generated banking message: Account opened successfully.
+2025-01-21 10:39:40.465 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Account opened successfully.
+2025-01-21 10:39:40.468 | INFO     | __main__:process_message:72 - Banking activity: Account opened successfully.
+2025-01-21 10:39:41.470 | INFO     | __main__:generate_messages:77 - Generated banking message: Customer made a deposit of $5000.
+2025-01-21 10:39:41.471 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Customer made a deposit of $5000.
+2025-01-21 10:39:41.475 | INFO     | __main__:process_message:64 - Deposit processed: Customer made a deposit of $5000.
+2025-01-21 10:39:42.476 | INFO     | __main__:generate_messages:77 - Generated banking message: Loan application approved for $25,000.
+2025-01-21 10:39:42.478 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Loan application approved for $25,000.
+2025-01-21 10:39:42.481 | INFO     | __main__:process_message:72 - Banking activity: Loan application approved for $25,000.
+2025-01-21 10:39:43.484 | INFO     | __main__:generate_messages:77 - Generated banking message: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:43.485 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:43.491 | INFO     | __main__:process_message:72 - Banking activity: Stock purchase order executed for 100 shares of ABC Corp.
+2025-01-21 10:39:44.491 | INFO     | __main__:generate_messages:77 - Generated banking message: Transaction declined due to insufficient funds.
+2025-01-21 10:39:44.492 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': Transaction declined due to insufficient funds.
+2025-01-21 10:39:44.495 | INFO     | __main__:process_message:72 - Banking activity: Transaction declined due to insufficient funds.
+2025-01-21 10:39:45.493 | INFO     | __main__:generate_messages:77 - Generated banking message: New credit card issued to customer ID 12345.
+2025-01-21 10:39:45.494 | INFO     | __main__:generate_messages:80 - Sent message to topic 'buzzline': New credit card issued to customer ID 12345.
+2025-01-21 10:39:45.497 | INFO     | __main__:process_message:72 - Banking activity: New credit card issued to customer ID 12345.

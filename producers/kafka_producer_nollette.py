@@ -34,13 +34,11 @@ load_dotenv()
 # Getter Functions for .env Variables
 #####################################
 
-
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
     topic = os.getenv("KAFKA_TOPIC", "banking_topic")
     logger.info(f"Kafka topic: {topic}")
     return topic
-
 
 def get_message_interval() -> int:
     """Fetch message interval from environment or use default."""
@@ -48,11 +46,9 @@ def get_message_interval() -> int:
     logger.info(f"Message interval: {interval} seconds")
     return interval
 
-
 #####################################
 # Message Generator
 #####################################
-
 
 def generate_messages(producer, topic, interval_secs):
     """
@@ -62,7 +58,6 @@ def generate_messages(producer, topic, interval_secs):
         producer (KafkaProducer): The Kafka producer instance.
         topic (str): The Kafka topic to send messages to.
         interval_secs (int): Time in seconds between sending messages.
-
     """
     string_list: list = [
         "Account opened successfully.",
@@ -80,7 +75,8 @@ def generate_messages(producer, topic, interval_secs):
         while True:
             for message in string_list:
                 logger.info(f"Generated banking message: {message}")
-                producer.send(topic, value=message.encode('utf-8'))  # Encode message for Kafka
+                # Send the string message directly
+                producer.send(topic, value=message)  
                 logger.info(f"Sent message to topic '{topic}': {message}")
                 time.sleep(interval_secs)
     except KeyboardInterrupt:
@@ -95,7 +91,6 @@ def generate_messages(producer, topic, interval_secs):
 #####################################
 # Main Function
 #####################################
-
 
 def main():
     """
@@ -131,7 +126,6 @@ def main():
     generate_messages(producer, topic, interval_secs)
 
     logger.info("END producer.")
-
 
 #####################################
 # Conditional Execution

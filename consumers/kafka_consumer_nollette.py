@@ -36,7 +36,7 @@ def get_kafka_topic() -> str:
     return topic
 
 
-def get_kafka_consumer_group_id() -> int:
+def get_kafka_consumer_group_id() -> str:
     """Fetch Kafka consumer group id from environment or use default."""
     group_id: str = os.getenv("KAFKA_CONSUMER_GROUP_ID_JSON", "default_group")
     logger.info(f"Kafka consumer group id: {group_id}")
@@ -99,7 +99,7 @@ def main() -> None:
     logger.info(f"Polling messages from topic '{topic}'...")
     try:
         for message in consumer:
-            message_str = message.value.decode('utf-8')  # Decode message
+            message_str = message.value  # Message is already a string (if value_deserializer is configured)
             logger.debug(f"Received message at offset {message.offset}: {message_str}")
             process_message(message_str)
     except KeyboardInterrupt:
